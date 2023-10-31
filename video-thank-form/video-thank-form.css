@@ -1,0 +1,297 @@
+/* ? Style Variables */
+:root {
+  --container--background--color: #f5e9e9;
+  --main--element--color: #221668;
+  --main--secondary--element--color: #fe4a55;
+  --main--border--radius--value: 10px;
+}
+
+/* ? Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main--logo {
+  width: 230px;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.main--form--container {
+  position: relative;
+  border: 2px dashed var(--main--element--color);
+  padding: 1rem;
+  border-radius: var(--main--border--radius--value);
+  margin: 0 15%;
+  height: 650px;
+  width: 100%;
+  background-color: var(--container--background--color);
+}
+
+.main--form--container--header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main--form--header--left--area {
+  display: flex;
+  align-items: center;
+}
+
+.main--form--back--button {
+  margin-right: 0.5rem;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-color: var(--main--secondary--element--color);
+  padding: 0.5rem;
+  border-radius: var(--main--border--radius--value);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.main--form--back--button--icon {
+  font-size: 24px;
+}
+
+.main--form--container--title--text {
+  display: flex;
+  align-items: center;
+  color: var(--main--element--color);
+}
+
+.main--form--container--title--icon {
+  margin-right: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--main--border--radius--value);
+  padding: 0.6rem;
+  background-color: var(--main--element--color);
+  color: white;
+}
+
+.main--form--step--info--area {
+  display: flex;
+  align-items: center;
+}
+
+.main--form--step--area {
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0.2rem 0.8rem;
+  border-radius: var(--main--border--radius--value);
+  color: var(--main--element--color);
+  border: 1px solid rgb(254, 74, 85, 0.5);
+}
+
+.this--step {
+  background-color: var(--main--secondary--element--color);
+  border: 1px solid var(--main--element--color);
+  color: white;
+}
+
+.prev--step {
+  background-color: var(--main--element--color);
+  color: white;
+  border: 1px solid var(--main--element--color);
+}
+
+.main--form--step--area--hr {
+  margin: 0 1rem;
+  border-radius: var(--main--border--radius--value);
+  height: 2px;
+  border: none;
+  background-color: var(--main--secondary--element--color);
+  opacity: 0.5;
+  width: 50px;
+}
+
+.prev--step--hr {
+  background-color: var(--main--element--color);
+}
+
+.main--form--login--button {
+  padding: 0.7rem 2rem;
+  border: 1px solid var(--main--element--color);
+  border-radius: 5px;
+  background-color: var(--main--element--color);
+  color: white;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.main--form--login--button--icon {
+  font-size: 24px;
+  color: white;
+  margin-right: 0.5rem;
+}
+
+.main--form--container--body--area {
+  margin-top: 100px;
+  position: relative;
+  padding: 0 30%;
+}
+
+.main--form--container--body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.main--form--input--label {
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--main--element--color);
+}
+
+.main--form--input--label--icon {
+  font-size: 24px;
+  margin-right: 0.5rem;
+}
+
+.main--form--input {
+  border-radius: var(--main--border--radius--value);
+  border: none;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0px 10px 20px rgb(211, 210, 210);
+}
+
+.main--form--input:focus {
+  outline-color: var(--main--element--color);
+}
+
+.main--form--next--button {
+  cursor: pointer;
+  padding: 1rem;
+  border: 1px solid var(--main--element--color);
+  border-radius: var(--main--border--radius--value);
+  background-color: var(--main--element--color);
+  color: white;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main--form--next--button--icon {
+  font-size: 24px;
+  margin-left: 0.5rem;
+}
+
+.inp--company--list--area {
+  padding: 0.5rem;
+  position: absolute;
+  display: none;
+  top: 100px;
+  border-radius: var(--main--border--radius--value);
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 225px;
+  overflow-y: scroll;
+  background-color: white;
+}
+
+.inp--company--list {
+  width: 100%;
+}
+
+.inp--company--list--item {
+  color: var(--main--element--color);
+  cursor: pointer;
+  width: 100%;
+  padding: 0.3rem;
+  display: flex;
+  align-items: center;
+  border-radius: var(--main--border--radius--value);
+}
+
+.inp--company--list--item:hover {
+  background-color: var(--main--secondary--element--color);
+  color: white;
+}
+
+.inp--company--list--item--logo {
+  margin-right: 1rem;
+  border-radius: var(--main--border--radius--value);
+  width: 80px;
+}
+
+.inp--company--list--item--title--text {
+  margin-bottom: 0.4rem;
+}
+
+.main--thank--text--area {
+  height: 200px;
+  resize: none;
+  box-shadow: 0px 10px 20px rgb(211, 210, 210);
+
+  padding: 0.8rem;
+  border: 1px solid var(--main--element--color);
+  margin-bottom: 1rem;
+  border-radius: var(--main--border--radius--value);
+}
+
+.main--form--complete--text--container {
+  display: flex;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 250px;
+  border-radius: var(--main--border--radius--value);
+  color: white;
+  background-color: var(--main--secondary--element--color);
+}
+
+.main--form--complete--text--icon {
+  font-size: 100px;
+  margin-bottom: 1rem;
+}
+
+.main--form--complete--text--title {
+  margin-bottom: 1rem;
+}
+
+.main--form--add--video--area {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main--secondary--element--color);
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+  height: 200px;
+  border-radius: var(--main--border--radius--value);
+  margin-bottom: 1rem;
+}
+
+.main--form--add--video--icon {
+  font-size: 75px;
+  margin-bottom: 1rem;
+}

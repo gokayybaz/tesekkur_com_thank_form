@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adım 2 - Teşekkür Yaz</title>
+    <link rel="stylesheet" href="./write-thank-form.css" />
+    <link rel="stylesheet" href="../responsive.css" />
+  </head>
+  <body>
+    <div class="main--form--container">
+      <img class="main--logo" src="../assets/tesekkurcom-logo.png" alt="Logo" />
+      <header class="main--form--container--header">
+        <div class="main--form--header--left--area">
+          <button id="btn-back-step-1" class="main--form--back--button">
+            <ion-icon
+              class="main--form--back--button--icon"
+              name="chevron-back-circle"
+            ></ion-icon>
+          </button>
+          <h1 class="main--form--container--title--text">
+            <ion-icon
+              class="main--form--container--title--icon"
+              name="create"
+            ></ion-icon>
+            Teşekkür Yaz
+          </h1>
+        </div>
+        <span class="main--form--step--info--area">
+          <span class="main--form--step--area prev--step">1</span>
+          <hr class="main--form--step--area--hr prev--step--hr" />
+          <span class="main--form--step--area this--step">2</span>
+          <hr class="main--form--step--area--hr" />
+          <span class="main--form--step--area">3</span>
+          <hr class="main--form--step--area--hr" />
+          <span class="main--form--step--area">Tamamlandı!</span>
+        </span>
+        <button id="btn-user-info" class="main--form--login--button">
+          <ion-icon
+            name="person"
+            class="main--form--login--button--icon"
+          ></ion-icon
+          >Örnek Kullanıcı
+        </button>
+      </header>
+      <div class="main--form--container--body--area">
+        <div class="main--form--container--body">
+          <label class="main--form--input--label" for="inp-company"
+            ><ion-icon
+              class="main--form--input--label--icon"
+              name="business"
+            ></ion-icon>
+            Kurum:</label
+          >
+          <input
+            id="inp-company"
+            class="main--form--input"
+            type="text"
+            placeholder="Kurum adını giriniz..."
+          />
+          <div id="inp-company-list" class="inp--company--list--area">
+            <ul class="inp--company--list">
+              <li id="inp-company-list-item" class="inp--company--list--item">
+                <img
+                  class="inp--company--list--item--logo"
+                  src="../assets/oku-logo.jpeg"
+                  alt="Company Logo"
+                />
+                <div class="inp--company--list--item--texts">
+                  <h4
+                    id="inp-company-list-item-title"
+                    class="inp--company--list--item--title--text"
+                  >
+                    Osmaniye Korkut Ata Üniversitesi
+                  </h4>
+                  <p>Osmaniye / Merkez</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <label class="main--form--input--label" for="inp-subject"
+            ><ion-icon
+              class="main--form--input--label--icon"
+              name="text"
+            ></ion-icon>
+            Konu:</label
+          >
+          <input
+            id="inp-subject"
+            class="main--form--input"
+            type="text"
+            placeholder="Teşekkür etmek istediğiniz konuyu giriniz..."
+          />
+          <button id="btn-form-next-stage-3" class="main--form--next--button">
+            İleri
+            <ion-icon
+              class="main--form--next--button--icon"
+              name="arrow-forward-circle"
+            ></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="./write-thank-form-step-2.js"></script>
+    <script src="./write-thank-form.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

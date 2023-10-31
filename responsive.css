@@ -1,0 +1,126 @@
+/* Telefonlar (portrait) */
+@media only screen and (max-width: 430px) {
+  body {
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+  }
+
+  .main--container {
+    margin: 20px;
+    padding: 3rem 1rem;
+  }
+
+  .main--container--button {
+    width: 45%;
+  }
+
+  .main--form--container {
+    border: none;
+    margin-top: 5%;
+    height: 80%;
+    max-height: 80%;
+  }
+  .main--form--container--header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .main--form--container--body--area {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .main--logo {
+    width: 200px;
+    position: absolute;
+  }
+  .main--form--container--title--text {
+    font-size: 24px;
+  }
+  .main--form--step--area--hr {
+    width: 20px;
+    margin: 0 0.5rem;
+  }
+  .main--form--step--area {
+    margin: 20px 0;
+  }
+  .main--form--login--button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .main--form--complete--text--container {
+    text-align: center;
+    height: 230px;
+  }
+}
+
+/* Tabletler (portrait and landscape)  */
+@media only screen and (min-width: 431px) and (max-width: 1450px) {
+  body {
+    max-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: start;
+  }
+
+  .main--container {
+    margin: 20px;
+    margin-top: 200px;
+  }
+
+  .main--form--container {
+    margin-top: 5%;
+    height: 80%;
+    max-height: 80%;
+  }
+  .main--form--container--header {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+  }
+  .main--form--container--body--area {
+    margin-top: 30px;
+    padding: 0;
+  }
+  .main--logo {
+    width: 200px;
+    position: absolute;
+  }
+  .main--form--container--title--text {
+    font-size: 24px;
+  }
+  .main--form--step--area--hr {
+    width: 20px;
+    margin: 0 0.5rem;
+  }
+  .main--form--step--area {
+    margin: 20px 0;
+  }
+
+  .main--form--container--body--area {
+    margin: 6%;
+    margin-top: 30px;
+  }
+
+  .main--form--login--button {
+    width: 40%;
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+  }
+  .main--form--complete--text--container {
+    text-align: center;
+  }
+}
+
+/* Masaüstü ve dizüstüler  */
+@media only screen and (min-width: 1224px) {
+  /* Styles */
+}
